@@ -3,17 +3,22 @@ package main
 import "fmt"
 
 func main(){
-	var a, b int
+	var usuario string
+	var senha string
 
-	fmt.Print("Digite dois números")
-	fmt.Scan(&a, &b)
-	fmt.Println("Os números são:", a, b)
-	fmt.Println("Soma:", a+b)
-	fmt.Println("Subtração:", a-b)
-	fmt.Println("Multiplicação:", a*b)
-	fmt.Println("Divisão:", a/b)
-	fmt.Println("Resto:", a%b)
+	usuarioCorreto := "Leonardo"
+	senhaCorreta := "3005"
 
-	a += 1
-	fmt.Println("Incremento de a:", a)
+	fmt.Print("Digite seu usuário:")
+	fmt.Scan(&usuario)
+	fmt.Print("Digite sua senha:")
+	fmt.Scan(&senha)
+
+	if usuario == usuarioCorreto && senha == senhaCorreta{
+		fmt.Println("Conta acessada com sucesso!")
+	} else{
+		fmt.Println("Seu nome de usuário ou senha estão incorretos, por favor, tente novamente")
+	}
+
+	
 }
