@@ -2,23 +2,15 @@ package main
 
 import "fmt"
 
+var a int = 3
+var nome string = "Leo"
+const c = 4
+
 func main(){
-	var usuario string
-	var senha string
-
-	usuarioCorreto := "Leonardo"
-	senhaCorreta := "3005"
-
-	fmt.Print("Digite seu usuário:")
-	fmt.Scan(&usuario)
-	fmt.Print("Digite sua senha:")
-	fmt.Scan(&senha)
-
-	if usuario == usuarioCorreto && senha == senhaCorreta{
-		fmt.Println("Conta acessada com sucesso!")
-	} else{
-		fmt.Println("Seu nome de usuário ou senha estão incorretos, por favor, tente novamente")
-	}
-
 	
+	b := 2
+	n := "Leonard"
+
+	fmt.Print("Os 3 números são:", a , b, c)
+	fmt.Print("Os nomes são:", nome, n)
 }
