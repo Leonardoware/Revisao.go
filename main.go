@@ -3,10 +3,17 @@ package main
 import "fmt"
 
 func main(){
-	var int num1
+	var a, b int
 
-	fmt.Print("Digite um número")
+	fmt.Print("Digite dois números")
+	fmt.Scan(&a, &b)
+	fmt.Println("Os números são:", a, b)
+	fmt.Println("Soma:", a+b)
+	fmt.Println("Subtração:", a-b)
+	fmt.Println("Multiplicação:", a*b)
+	fmt.Println("Divisão:", a/b)
+	fmt.Println("Resto:", a%b)
 
-	fmt.Scan(&num1)
-	fmt.Println("O número digitado é", num1)
+	a += 1
+	fmt.Println("Incremento de a:", a)
 }
